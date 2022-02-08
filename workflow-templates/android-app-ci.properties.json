@@ -1,0 +1,11 @@
+{
+    "name": "Vostok Android CI Workflow",
+    "description": "Provides PR security using run checks.",
+    "iconName": "san",
+    "categories": [
+        "Gradle"
+    ],
+    "filePatterns": [
+        "build.gradle*"
+    ]
+}
