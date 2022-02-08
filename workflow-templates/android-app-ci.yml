@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
   build:
-    uses: alediazper/.github/workflows/android-build.yml@main
+    uses: alediazper/shared-workflows/.github/workflows/android-build.yml@main
