@@ -2,6 +2,11 @@ name: Vostok Android CI
 
 on:
   pull_request:
+    - labeled
+    - unlabeled
+    - opened
+    - reopened
+    - synchronize
 
 jobs:
   checkout:
