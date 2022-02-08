@@ -1,15 +1,10 @@
 name: Vostok Android CI
 
 on:
-  push:
-    branches: [ $default-branch ]
   pull_request:
-    branches: [ $default-branch ]
 
 jobs:
   checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+    uses: alediazper/shared-workflows/.github/workflows/android-checkout.yml@main
   build:
     uses: alediazper/shared-workflows/.github/workflows/android-build.yml@main
