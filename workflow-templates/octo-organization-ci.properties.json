@@ -1,11 +1,11 @@
 {
     "name": "Vostok Organization Workflow",
     "description": "Vostok Organization CI starter workflow.",
-    "iconName": "example-icon",
+    "iconName": "san",
     "categories": [
-        "Android"
+        "Gradle"
     ],
     "filePatterns": [
-        "build.gradle$"
+        "build.gradle*"
     ]
 }
