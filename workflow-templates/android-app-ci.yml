@@ -5,6 +5,9 @@ on:
 
 jobs:
   checkout:
-    uses: alediazper/shared-workflows/.github/workflows/android-checkout.yml@main
+    uses: alediazper/shared-workflows/.github/workflows/checkout.yml@main
   build:
     uses: alediazper/shared-workflows/.github/workflows/android-build.yml@main
+  functional-test:
+    if: contains(github.event.pull_request.labels.*.name, 'vostok-ci:functional-test')
+    uses: alediazper/shared-workflows/.github/workflows/functional-test.yml@main
