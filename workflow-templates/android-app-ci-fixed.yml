@@ -1,0 +1,9 @@
+name: Vostok Android CI
+
+on:
+  pull_request:
+    types: [labeled, unlabeled, opened, reopened, synchronize]
+
+jobs:
+  android-ci:
+    uses: alediazper/shared-workflows/.github/workflows/android-app-ci.yml@main
